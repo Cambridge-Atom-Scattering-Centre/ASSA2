@@ -13,3 +13,9 @@ xlabel('$\Delta E/\mathrm{meV}$','Interpreter','latex')
 ylabel('Intensity/arb. units','Interpreter','latex')
 xlim([-5 20])
 ```
+
+If the data has outliers in it, use the following commands to remove them
+
+```matlab
+meas = remove_spikes(meas,1);
+```
